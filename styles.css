@@ -335,41 +335,4 @@ img {
     .projects {
         margin-left: 0;
     }
-
-    .github, .github2, .linkedin, .linkedin2, .email, .email2 {
-        margin: 10px;
-    }
-}
-
-.logo, .logo2, .github, .github2, .linkedin, .linkedin2, .email, .email2 {
-    width: 100%;
-    height: auto;
-    max-width: 150px;
-    transition: all 0.3s ease;
-}
-
-.logo:hover, .logo2:hover, .github:hover, .github2:hover, .linkedin:hover, .linkedin2:hover, .email:hover, .email2:hover {
-    filter: opacity(50%);
-}
-
-@media (min-width: 992px) {
-    .logo, .logo2 {
-        top: 100px;
-        left: 50px;
-    }
-
-    .github, .github2 {
-        margin-left: 600px;
-        margin-top: -35px;
-    }
-
-    .linkedin, .linkedin2 {
-        margin-left: 540px;
-        margin-top: -39px;
-    }
-
-    .email, .email2 {
-        margin-left: 470px;
-        margin-top: -44px;
-    }
 }
