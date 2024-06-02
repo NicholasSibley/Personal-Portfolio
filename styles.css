@@ -1,12 +1,10 @@
 
 body {
     background-image: linear-gradient(to right, #181818 0%, #181818 100%);
-    margin: 0;
-    padding: 0;
 }
 
 .logo {
-    position: fixed;
+    position: absolute;
     top: 180px;
     left: 310px;
     width: 150px;
@@ -128,33 +126,29 @@ body {
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .left-content {
-    flex: 1 1 300px;
+    flex: 1;
     margin-top: 100px;
-    min-width: 300px;
 }
 
 .right-content {
-    flex: 1 1 300px;
+    flex: 1;
     margin-top: 100px;
-    min-width: 300px;
 }
 
 .title1 {
     position: relative;
     top: 100px;
-    font-size: 5vw;
+    font-size: 120px;
     font-family: 'Daikon ExtraLight', sans-serif;
     color: rgb(240, 240, 240);
     margin-left: 90px;
 }
 
 .title2 {
-    font-size: 2.5vw;
+    font-size: 50px;
     font-family: 'Daikon ExtraLight', sans-serif;
     color: rgb(240, 240, 240);
     margin-left: 300px;
@@ -204,7 +198,7 @@ body {
 }
 
 .about-me {
-    font-size: 1.2em;
+    font-size: 20px;
     font-family: 'Daikon ExtraLight', sans-serif;
     color: rgb(240, 240, 240);
     margin-left: 10px;
@@ -241,7 +235,7 @@ body {
 }
 
 .projects {
-    font-size: 1.2em;
+    font-size: 20px;
     font-family: 'Daikon ExtraLight', sans-serif;
     color: rgb(240, 240, 240);
     margin-left: 300px;
@@ -274,14 +268,9 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .border1 {
@@ -315,61 +304,4 @@ html.is-animating body {
 
 html.is-animating .transition-fade {
     visibility: visible;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .title1, .title2 {
-        font-size: 8vw;
-    }
-
-    .projects {
-        margin-left: 0;
-    }
-
-    .github, .github2, .linkedin, .linkedin2, .email, .email2 {
-        margin: 10px;
-    }
-}
-
-.logo, .logo2, .github, .github2, .linkedin, .linkedin2, .email, .email2 {
-    width: 100%;
-    height: auto;
-    max-width: 150px;
-    transition: all 0.3s ease;
-}
-
-.logo:hover, .logo2:hover, .github:hover, .github2:hover, .linkedin:hover, .linkedin2:hover, .email:hover, .email2:hover {
-    filter: opacity(50%);
-}
-
-@media (min-width: 992px) {
-    .logo, .logo2 {
-        top: 100px;
-        left: 50px;
-    }
-
-    .github, .github2 {
-        margin-left: 600px;
-        margin-top: -35px;
-    }
-
-    .linkedin, .linkedin2 {
-        margin-left: 540px;
-        margin-top: -39px;
-    }
-
-    .email, .email2 {
-        margin-left: 470px;
-        margin-top: -44px;
-    }
 }
